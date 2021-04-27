@@ -1,9 +1,9 @@
-package mobile.project.bzu.myapplication;
+package mobile.project.bzu.myapplication.Model;
 
 public class CV {
     private String Name;
     private String Email;
-    private int Age;
+    private Integer Age;
     private int phone;
     private String Hobbies;
     private String Education;
@@ -53,11 +53,12 @@ public class CV {
         Email = email;
     }
 
-    public int getAge() {
+
+    public Integer getAge() {
         return Age;
     }
 
-    public void setAge(int age) {
+    public void setAge(Integer age) {
         Age = age;
     }
 

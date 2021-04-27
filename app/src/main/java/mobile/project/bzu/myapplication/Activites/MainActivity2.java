@@ -1,11 +1,10 @@
-package mobile.project.bzu.myapplication;
+package mobile.project.bzu.myapplication.Activites;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -14,7 +13,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.gson.Gson;
 
-import java.util.ArrayList;
+import mobile.project.bzu.myapplication.Model.CV;
+import mobile.project.bzu.myapplication.R;
 
 public class MainActivity2 extends AppCompatActivity {
     EditText edt5;

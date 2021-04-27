@@ -1,4 +1,4 @@
-package mobile.project.bzu.myapplication;
+package mobile.project.bzu.myapplication.Activites;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -17,6 +17,9 @@ import com.google.gson.Gson;
 
 import java.util.ArrayList;
 
+import mobile.project.bzu.myapplication.Model.CV;
+import mobile.project.bzu.myapplication.R;
+
 public class MainActivity extends AppCompatActivity {
     EditText edt1 ;
     EditText edt2;
@@ -31,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
     public static final String NAME="NAME";
     SharedPreferences prefs;
     private boolean flag=false;
+    ArrayAdapter<String> arrayadapter;
     ArrayList<CV> ex;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -99,13 +103,13 @@ public class MainActivity extends AppCompatActivity {
         //String name1=cv1.getName().toString();
         edt1.setText(cv1.getName());
     //    CV cvs = new CV();
+      //  Integer m=cv1.getAge();
         edt2.setText(cv1.getEmail());
         edt4.setText(cv1.getHobbies());
-       // edt5.setText(cv1.getAge());
-
-        //edt3.setText(ss);
-      //  edt5.setText(cv1.getAge());
-     //   edt1.setText(cv1.getName());
+       // if(key.eq)
+     //
+        edt5.setText("" +cv1.getAge());
+        edt3.setText("" +cv1.getPhone());
 
         Toast.makeText(this, "text" + cv1
                 , Toast.LENGTH_SHORT).show();
